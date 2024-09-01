@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+.basu{
+    font-family: tourney;
+    font-weight: 100%;
+    color: #6a0d83;
+}
+
+
+
+h2 {
+    justify-content: center;
+    width: auto;
+    display: inline-block;
+    color: #fff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(32, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+    
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: gray; }
+  }
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace,sans-serif ;
+    background-color: #000;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+img{
+    object-fit: cover;
+}
+
+
+nav{
+    display: flex;
+    overflow:auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    border: 1px solid #cbebeb;
+    position:relative;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 16px;
+    padding: 12px;
+
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+nav .logo img{
+    width: 75px;
+    height: 75px;
+}
+
+nav .logo a{
+    color: #fff;
+    font-weight: 600;
+
+}
+
+nav .nav-links{
+    display: flex;
+    gap: 24px;
+}
+
+nav .nav-links a{
+    font-size:18px;
+    color: #fff;
+    transition:all 0.3s ease;
+}
+
+nav .nav-links a:hover{
+    background: linear-gradient(115deg, #eeaf61, #fb9062, #ee5d6c, #ce4993, #6a0d83);
+    padding: 3px;
+    border-radius: 25px;
+    border-width:100%;
+    
+}
+
+nav button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    font-size: 14px;
+    height: 42px;
+    width: 122px;
+    background: #1d1c1c;
+    color: #fff;
+    padding:5px;
+    border-radius:8px ;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav button:hover{
+    color: #000;
+    background:#fff;
+    background-color:#dedede;
+}
+
+nav button i{
+    font-size: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    height: 100vh;
+    
+    
+}
+.doc-border,.git-border{
+    background: #fff;
+    padding: 2px;
+    border-radius: 25px;
+
+}
+.git-border:hover{
+    background: linear-gradient(115deg, #eeaf61, #fb9062, #ee5d6c, #ce4993, #6a0d83);
+    padding: 4px;
+    border-radius: 25px;
+
+}
+.doc-border:hover{
+    align-items: end;
+    background: linear-gradient(115deg, #eeaf61, #fb9062, #ee5d6c, #ce4993, #6a0d83);
+    padding: 4px;
+    border-radius: 25px;
+
+}
+
+
+
+.doc,.git{
+    border:none;
+    background:#000 ;
+    color: #cbcbcb;
+    padding: 1em 1.5em;
+    font-size: 15px;
+    border-radius: 25px;
+}
+
+.top{
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    color: #fff;
+    
+
+}
+p{  
+    padding: 50px;
+}
+
+.icons{
+    color: #fff;
+    display: flex;
+    margin-top: -700px;
+    align-items:flex-start;
+    
+}
+
+
+
+
+
+
